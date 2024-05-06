@@ -1,16 +1,20 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const UserSchema = new Schema({
+const StateSchema = new Schema({
   stateCode: {
     type: String,
     required: true,
     unique: true,
   },
-  funFacts: {//array?
-    type: String,
+  funFacts: {
+    type: [String],
   },
-});
+}, 
+);
+
+// In the collection, the stateCode property will contain state abbreviation values.
+// In the collection, the funfacts array will contain “fun facts” about the state
 
 
 //   email: {
