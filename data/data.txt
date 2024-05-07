@@ -1,3 +1,0 @@
-pletcher77
-
-mongodb+srv://ddpletcher:pletcher77@cluster0.cutvyke.mongodb.net/
