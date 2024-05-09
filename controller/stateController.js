@@ -105,13 +105,11 @@ const getFunFact = async(req,res) =>{
   }
   console.log(stateTarget.funfacts)
   if(typeof stateTarget.funfacts != "undefined"){
-    for(i = 0; i < stateTarget.funfacts.length; i++)
-      fact = stateTarget.funfacts[i];
-      res.json(fact);
+    fact = stateTarget.funfacts;
+    res.json(fact);
   }
   else{
       return res.status(400).json({message: "no fun facts available"})
-
   }
 }
 
