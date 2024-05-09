@@ -3,16 +3,16 @@ const router = express();
 const path = require("path");
 
 router.get("^/$|/index(.html)?", (req, res) => {
-  res.sendFile(path.join(__dirname, "..", "views", "index.html"));
+  res.sendFile(path.join(__dirname, "..", "..", "index.html"));
 });
 
-router.get("/new-page.html", (req, res) => {
+router.get("/states.html", (req, res) => {
   //   res.sendFile("./views/new-page.html", { root: __dirname });
-  res.sendFile(path.join(__dirname, "..", "views", "new-page.html"));
+  res.sendFile(path.join(__dirname, "..", "..", "states.html"));
 });
 
-router.get("/old-page.html", (req, res) => {
-  res.redirect(301, "/new-page.html");
+router.get("/index.html", (req, res) => {
+  res.redirect(301, "/states.html");
 });
 
 module.exports = router;

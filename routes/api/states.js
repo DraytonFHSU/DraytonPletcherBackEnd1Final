@@ -9,6 +9,6 @@ router
   .put(stateController.UpdateState)
   .delete(stateController.DeleteState);
 
-router.route("/:id").get(stateController.GetAllState);
+router.route("/:stateCode").get(stateController.GetAllState);
 
 module.exports = router;
