@@ -24,12 +24,12 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, "/public")));
 app.use("/subdir", express.static(path.join(__dirname, "/public")));
 
-// Route Handlers
-app.use("/", require("./routes/root"));
-app.use("/", require("./routes/subdir"));
-
 // API router
 app.use("/states", require("./routes/api/states"));
+
+// Route Handlers
+app.use("/", require("./routes/root.js"));
+
 
 // 404 route for un-defined
 app.all("*", (req, res) => {
