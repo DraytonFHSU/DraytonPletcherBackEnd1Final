@@ -174,3 +174,5 @@
 05-09-2024 	 04:10:38 	 431c1536-bd00-4010-94bd-451ea40cc650 	 GET	undefined	/states/ 
 05-09-2024 	 04:10:50 	 322dc66c-1e66-421a-b385-4400e98817a2 	 GET	undefined	/states/KS/capital 
 05-09-2024 	 04:11:52 	 78e3e987-346b-4d01-9960-8e47d263d892 	 GET	undefined	/states/KS/capital 
+05-09-2024 	 05:06:00 	 a045ee07-dc38-4037-8e64-2eacb527ac27 	 GET	undefined	/states/ 
+05-09-2024 	 05:06:01 	 8cfa06b1-7533-47c0-ab1b-42e8763f8812 	 GET	undefined	/favicon.ico 
