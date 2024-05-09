@@ -22,4 +22,13 @@ router
 //code router
 router.route("/:code").get(stateController.GetAllState);
 
+//filter routers
+router.route('/:code/capital').get(stateController.getCapital);
+
+router.route('/:code/nickname').get(stateController.getNickname);
+
+router.route('/:code/population').get(stateController.getPopulation);
+
+router.route('/:code/admission').get(stateController.getAdmission);
+
 module.exports = router;

@@ -176,3 +176,9 @@
 05-09-2024 	 04:11:52 	 78e3e987-346b-4d01-9960-8e47d263d892 	 GET	undefined	/states/KS/capital 
 05-09-2024 	 05:06:00 	 a045ee07-dc38-4037-8e64-2eacb527ac27 	 GET	undefined	/states/ 
 05-09-2024 	 05:06:01 	 8cfa06b1-7533-47c0-ab1b-42e8763f8812 	 GET	undefined	/favicon.ico 
+05-09-2024 	 05:07:35 	 35faf481-be8c-4753-ba73-e452c0f12992 	 GET	undefined	/states/ 
+05-09-2024 	 05:12:01 	 157ad9c9-aa44-46fc-abb9-b7022b175c3e 	 GET	undefined	/states/KS/ 
+05-09-2024 	 05:12:02 	 43e0ed83-d227-42cc-a26c-d81407e0d305 	 GET	undefined	/favicon.ico 
+05-09-2024 	 05:12:06 	 597ecfe2-6236-43b2-903f-b6d932b5ff8d 	 GET	undefined	/states/KS/nickname/ 
+05-09-2024 	 05:12:25 	 cce376c4-6ade-4ea1-af36-f5884b6f591e 	 GET	undefined	/states/KS/funfact 
+05-09-2024 	 05:13:05 	 ebdeee83-4bdf-4a37-84cc-d3d662bd72a2 	 GET	undefined	/states/KS/nickname/ 

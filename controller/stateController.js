@@ -185,6 +185,36 @@ const deleteFunFact = async (req,res) => {
   res.json(stateTarget)
 }
 
+//filters
+const getAdmission = async(req, res) =>{
+  const states = await State.findOne({code: req.params.code});
+  if(!states){return res.status(400).json({message: "Oopsie Poopsie! Didn't work!"})};
+  console.log(states.capital_city, states.capital_url)
+  res.status(200).json({"state" : states.state, "admission" : states.admission_date});
+}
+
+const getCapital = async(req, res) =>{
+  const states = await State.findOne({code: req.params.code});
+  if(!states){return res.status(400).json({message: "Oopsie Poopsie! Didn't work!"})};
+  console.log(states.capital_city, states.capital_url)
+  res.status(200).json({"state" : states.state, "capital" : states.capital_city});
+}
+
+const getNickname = async(req, res) =>{
+  const states = await State.findOne({code: req.params.code});
+  if(!states){return res.status(400).json({message: "Oopsie Poopsie! Didn't work!"})};
+  console.log(states.capital_city, states.capital_url)
+  res.status(200).json({"state" : states.state, "nickname" : states.nickname});
+}
+
+const getPopulation = async(req, res) =>{
+  const states = await State.findOne({code: req.params.code});
+  if(!states){return res.status(400).json({message: "Oopsie Poopsie! Didn't work!"})};
+  console.log(states.capital_city, states.capital_url)
+  res.status(200).json({"state" : states.state, "population" : states.population});
+}
+
+
 module.exports = {
   GetAllState,
   CreateNewState,
@@ -194,5 +224,9 @@ module.exports = {
   getFunFact,
   addFunFact,
   patchFunFact,
-  deleteFunFact
+  deleteFunFact,
+  getAdmission,
+  getCapital,
+  getNickname,
+  getPopulation
 };
