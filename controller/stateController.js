@@ -188,28 +188,28 @@ const deleteFunFact = async (req,res) => {
 //filters
 const getAdmission = async(req, res) =>{
   const states = await State.findOne({code: req.params.code});
-  if(!states){return res.status(400).json({message: "Oopsie Poopsie! Didn't work!"})};
+  if(!states){return res.status(400).json({message: "Admission date unavailable"})};
   console.log(states.capital_city, states.capital_url)
   res.status(200).json({"state" : states.state, "admission" : states.admission_date});
 }
 
 const getCapital = async(req, res) =>{
   const states = await State.findOne({code: req.params.code});
-  if(!states){return res.status(400).json({message: "Oopsie Poopsie! Didn't work!"})};
+  if(!states){return res.status(400).json({message: "Capital unavailable"})};
   console.log(states.capital_city, states.capital_url)
   res.status(200).json({"state" : states.state, "capital" : states.capital_city});
 }
 
 const getNickname = async(req, res) =>{
   const states = await State.findOne({code: req.params.code});
-  if(!states){return res.status(400).json({message: "Oopsie Poopsie! Didn't work!"})};
+  if(!states){return res.status(400).json({message: "Nickname unavailable!"})};
   console.log(states.capital_city, states.capital_url)
   res.status(200).json({"state" : states.state, "nickname" : states.nickname});
 }
 
 const getPopulation = async(req, res) =>{
   const states = await State.findOne({code: req.params.code});
-  if(!states){return res.status(400).json({message: "Oopsie Poopsie! Didn't work!"})};
+  if(!states){return res.status(400).json({message: "Population unavailable!"})};
   console.log(states.capital_city, states.capital_url)
   res.status(200).json({"state" : states.state, "population" : states.population});
 }
